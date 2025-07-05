@@ -1,0 +1,24 @@
+{
+  "name": "API-MoneyManager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mateus S S Souza",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.11.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.11.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "sucrase": "^3.35.0"
+  }
+}

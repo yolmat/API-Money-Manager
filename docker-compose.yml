@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db-postgres-moneymanager:
+    image: postgres:alpine
+    ports:
+      - "5436:5432"
+    container_name: "db-postgres-moneymanager"
+    restart: always
+    volumes:
+      - ./db-moneymanager:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: user-db-moneymanager
+      POSTGRES_PASSWORD: teste
+
+volumes:
+  db-moneymanager:
